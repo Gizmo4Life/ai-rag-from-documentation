@@ -18,6 +18,7 @@ Standardized execution sequences and automation flows.
 - [Pattern Intake](pattern-intake.md): Geometry extraction.
 - [Standard Definition](standard-definition.md): PADU fitness judgment.
 - [Architecture Review](architecture-review.md): Landscape/T3 mapping.
+- [Documentation Validation](documentation-validation.md): Integrity/Drift audit.
 - [Operational Readiness](operational-readiness.md): Telemetry/Recovery verification.
 - [Observability Compliance](observability-compliance.md): Telemetry definition.
 - [Runbook Completeness](runbook-completeness.md): Recovery documentation.

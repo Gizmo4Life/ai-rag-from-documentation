@@ -13,6 +13,7 @@ Verify that a contribution adheres to all repository standards and maintains arc
 - **Verify:** The PR includes a [Walkthrough](/docs/developer/pattern/doc-ops-task.md) of the changes made.
 
 ## 3. Verification & Compliance
+- **Action:** Execute [Documentation Validation](documentation-validation.md) to find drift or omissions.
 - **Action:** Execute [Test Planning](test-planning.md) to verify coverage of new logic.
 - **Action:** Execute [Observability Compliance](observability-compliance.md) for any structural code changes.
 - **Action:** Execute [Runbook Completeness](runbook-completeness.md) if new modules or critical spans were added.

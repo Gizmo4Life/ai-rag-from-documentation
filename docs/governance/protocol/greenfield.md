@@ -16,8 +16,10 @@ Add new functionality by deriving a testable solution definition, scaffolding th
 - **Verify:** User approval of the T2 Capability and test definition *before* proceeding.
 
 ## 3. Implementation Execution
-- **Action:** Materialize the hollow [T3 Modules](/docs/developer/pattern/doc-t3-module.md).
-- **Action:** Select the **Preferred (P)** [Patterns] from the [Standard Manifest].
+- **Action:** Materialize the hollow [T3 Modules](/docs/developer/pattern/doc-t3-module.md) (Architecture).
+- **Action:** Select the **Preferred (P)** [Patterns] from the [Standard] (Standard).
 - **Action:** Write the physical code in `/src` adhering strictly to the selected Patterns.
+- **Action:** Materialize required [Operational Artifacts] (Runbooks/Alerts).
 - **Action:** Embed the [Signpost Readme] in the new directories.
-- **Verify:** Execute the test/verification defined in Step 2.
+- **Action:** Execute [Documentation Validation](documentation-validation.md) to ensure all artifacts are correctly formatted and linked.
+- **Verify:** Execute the test/verification and final [Operational Readiness].

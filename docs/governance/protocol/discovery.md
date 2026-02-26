@@ -9,13 +9,14 @@ pillar: governance
 Find undocumented or outdated documentation with respect to current code, characterize the patterns, and update architectural files.
 
 ## 2. Drift Analysis (Code vs. Docs)
-- **Action:** Scan all repository directories (e.g., root, tools/, workflows/, scripts/) against `docs/architecture/` (T1, T2, T3).
+- **Action:** Execute [Documentation Validation](documentation-validation.md).
 - **Verify:** Identify physical code files that lack a corresponding T3 module or have stale pattern mappings.
 
 ## 3. Characterization & Review
 - **Action:** For newly discovered or altered code shapes, execute [Pattern Intake](pattern-intake.md).
 - **Action:** Execute [Standard Definition](standard-definition.md) to assign fitness ratings.
 - **Action:** Execute [Architecture Review](architecture-review.md) to reconcile the new mappings.
+- **Action:** Execute [Operational Readiness](operational-readiness.md) to verify existing telemetry/recovery.
 
 ## 4. Architectural Reconciliation
 - **Action:** Create or update the T3 Module files to explicitly link the discovered code to Patterns and Standards.
