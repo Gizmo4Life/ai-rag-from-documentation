@@ -11,3 +11,5 @@ Human-centric guides for the SDLC.
 
 - [Getting Started](getting-started.md): Onboarding and local setup.
 - [Git Workflow](git-workflow.md): Branching and PR procedures.
+- [Consumption Strategies](consumption-strategies.md): Technical guides for Greenfield and Brownfield use cases.
+
