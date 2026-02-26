@@ -10,9 +10,9 @@ pillar: governance
 
 | Pattern | Rating | Contextual Nuance (Constraints & Limits) |
 | :--- | :--- | :--- |
-| [doc-t2-capability](/docs/developer/pattern/doc-t2-capability.md) | **P** | Use to map business logic. Must not contain code snippets. |
-| [doc-t3-module](/docs/developer/pattern/doc-t3-module.md) | **P** | Use to map physical files to patterns. Max 50 lines. |
-| [doc-ops-task](/docs/developer/pattern/doc-ops-task.md) | **P** | Use for atomic fixes. Must be perfectly idempotent. Max 50 lines. |
-| [doc-gov-protocol](/docs/developer/pattern/doc-gov-protocol.md) | **P** | Use for system modifications. Max 50 lines. |
-| **Monolithic Wiki Page** | **U** | Forbidden. Do not mix T2 orchestration with T3 implementation in the same file. |
-| **Narrative Paragraphs** | **U** | Forbidden. Exceeding 2 sentences per paragraph breaks RAG density. Use lists or diagrams. |
+| [doc-t2-capability](/docs/developer/pattern/doc-t2-capability.md) | **P** | No implementation details. |
+| [doc-t3-module](/docs/developer/pattern/doc-t3-module.md) | **P** | Physical-to-Pattern maps. Max 50 lines. |
+| [doc-ops-restoration-step](/docs/developer/pattern/doc-ops-restoration-step.md) | **P** | Idempotent CLI tasks. Max 50 lines. |
+| [doc-gov-protocol](/docs/developer/pattern/doc-gov-protocol.md) | **P** | System modification rules. |
+| [doc-monolithic-wiki](/docs/developer/pattern/doc-monolithic-wiki.md) | **U** | Mixing orchestration with implementation. |
+| [doc-narrative-paragraphs](/docs/developer/pattern/doc-narrative-paragraphs.md) | **U** | Exceeding 2 sentences per paragraph. |

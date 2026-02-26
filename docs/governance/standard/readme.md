@@ -10,6 +10,7 @@ pillar: governance
 Global repository constraints and architectural rules.
 
 - [arch-documentation](arch-documentation.md)
+- [cicd-pipeline](cicd-pipeline.md): Quality and deployment guidelines.
 - [document-organization](document-organization.md)
 - [document-topologies](document-topologies.md)
 - [ops-documentation](ops-documentation.md)

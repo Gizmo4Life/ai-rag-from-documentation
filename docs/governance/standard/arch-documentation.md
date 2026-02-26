@@ -10,8 +10,8 @@ pillar: governance
 
 | Pattern | Rating | Contextual Nuance |
 | :--- | :--- | :--- |
-| [doc-t1-landscape](/docs/developer/pattern/doc-t1-landscape.md) | **P** | Required at the root of `docs/architecture/` to orient agents globally. |
-| [doc-t2-capability](/docs/developer/pattern/doc-t2-capability.md) | **P** | Required for defining business logic sequences. Max 100 lines. |
-| [doc-t3-module](/docs/developer/pattern/doc-t3-module.md) | **P** | Required for physical code mapping. Must link directly to `/src` signposts. Max 50 lines. |
-| **T2 with Code Snippets** | **U** | Unacceptable. T2 must remain implementation-agnostic. |
-| **T3 detailing Business Logic** | **U** | Unacceptable. T3 must only describe structural patterns and telemetry. |
+| [doc-t1-landscape](/docs/developer/pattern/doc-t1-landscape.md) | **P** | Required at the root of `docs/architecture/` |
+| [doc-t2-capability](/docs/developer/pattern/doc-t2-capability.md) | **P** | Business logic focus. Implementation agnostic. |
+| [doc-t3-module](/docs/developer/pattern/doc-t3-module.md) | **P** | Physical mapping. Must link to `/src`. |
+| [doc-t2-with-code](/docs/developer/pattern/doc-t2-with-code.md) | **U** | Mixing code snippets in strategy files. |
+| [doc-t3-with-biz-logic](/docs/developer/pattern/doc-t3-with-biz-logic.md) | **U** | Mixing intent in implementation maps. |

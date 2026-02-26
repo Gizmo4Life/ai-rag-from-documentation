@@ -10,9 +10,8 @@ pillar: governance
 
 | Pattern | Rating | Contextual Nuance |
 | :--- | :--- | :--- |
-| [doc-breadcrumb-navigation](/docs/developer/pattern/doc-breadcrumb-navigation.md) | **P** | Required at the top of every documentation file. |
-| [doc-flat-hierarchy](/docs/developer/pattern/doc-flat-hierarchy.md) | **P** | Ensures a flat graph (e.g., `docs/developer/pattern/`). |
-| [doc-yaml-metadata](/docs/developer/pattern/doc-yaml-metadata.md) | **P** | Required on all files for RAG metadata indexing. |
-| [doc-dichotomy](/docs/developer/pattern/doc-dichotomy.md) | **P** | Patterns define "What." Standards define "Should." |
-| **Sub-directory Nesting** | **U** | Forbidden. Use expressive prefixes (e.g., `auth-jwt.md`) instead. |
-| **Paragraphs > 2 Sentences in READMEs** | **U** | Forbidden. Use Mermaid diagrams or bifurcate into atomic files. |
+| [doc-breadcrumb-navigation](/docs/developer/pattern/doc-breadcrumb-navigation.md) | **P** | Top of every documentation file. |
+| [doc-flat-hierarchy](/docs/developer/pattern/doc-flat-hierarchy.md) | **P** | Flat graph structure. |
+| [doc-yaml-metadata](/docs/developer/pattern/doc-yaml-metadata.md) | **P** | RAG metadata indexing core. |
+| [doc-directory-nesting](/docs/developer/pattern/doc-directory-nesting.md) | **U** | Nested folders (use prefixes instead). |
+| [readme-long-prose](/docs/developer/pattern/readme-long-prose.md) | **U** | READMEs with narrative paragraphs. |

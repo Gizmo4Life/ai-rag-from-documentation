@@ -6,7 +6,7 @@ pillar: governance
 [Home](/) > [Docs](/docs/readme.md) > [Governance](/docs/governance/readme.md) > [Protocol](readme.md) > PR Review
 
 ## 1. Objective
-Verify that a contribution adheres to all repository standards and maintains architectural integrity.
+Verify that a contribution adheres to the [Git Workflow](/docs/developer/workflow/git-workflow.md), matches all repository standards, and maintains architectural integrity.
 
 ## 2. Architectural Verification
 - **Action:** Execute [Architecture Review](architecture-review.md) on all changed files.

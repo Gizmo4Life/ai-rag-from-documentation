@@ -9,4 +9,5 @@ pillar: developer
 
 Human-centric guides for the SDLC.
 
-- [getting-started](getting-started.md)
+- [Getting Started](getting-started.md): Onboarding and local setup.
+- [Git Workflow](git-workflow.md): Branching and PR procedures.
