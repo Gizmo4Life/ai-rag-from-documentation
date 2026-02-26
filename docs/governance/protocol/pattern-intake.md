@@ -21,8 +21,4 @@ Extract a novel code or document structure, define it as a contextless geometry 
 - **Action:** Open `docs/developer/pattern/readme.md`.
 - **Action:** Add the new pattern under the most relevant human-facing Concern heading.
 - **Action:** Update the YAML `index_map` at the bottom of the README to ensure RAG pipelines can traverse it.
-
-## 5. Contextual Judgment (PADU)
-- **Action:** Execute [Architecture Review](architecture-review.md) to identify the governing [Standard].
-- **Action:** Insert the pattern into the Standard's Markdown table.
-- **Action:** Assign a rating (Preferred, Acceptable, Discouraged, Unacceptable) and write the specific **Nuance** justifying the rating for that context.
+- **Verify:** The pattern is now searchable and traversable by the DaC engine.

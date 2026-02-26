@@ -11,7 +11,8 @@ Add new functionality by deriving a testable solution definition, scaffolding th
 ## 2. Planning & Design
 - **Action:** Execute [Test Planning](test-planning.md) to define acceptance criteria.
 - **Action:** Execute [Architecture Review](architecture-review.md) to map the new functionality.
-- **Action:** Execute [Observability Compliance](observability-compliance.md) to plan telemetry emission.
+- **Action:** Execute [Standard Definition](standard-definition.md) to select appropriate patterns.
+- **Action:** Execute [Operational Readiness](operational-readiness.md) to plan telemetry and recovery.
 - **Verify:** User approval of the T2 Capability and test definition *before* proceeding.
 
 ## 3. Implementation Execution

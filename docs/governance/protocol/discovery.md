@@ -14,8 +14,8 @@ Find undocumented or outdated documentation with respect to current code, charac
 
 ## 3. Characterization & Review
 - **Action:** For newly discovered or altered code shapes, execute [Pattern Intake](pattern-intake.md).
+- **Action:** Execute [Standard Definition](standard-definition.md) to assign fitness ratings.
 - **Action:** Execute [Architecture Review](architecture-review.md) to reconcile the new mappings.
-- **Action:** Execute [Observability Compliance](observability-compliance.md) to verify existing telemetry.
 
 ## 4. Architectural Reconciliation
 - **Action:** Create or update the T3 Module files to explicitly link the discovered code to Patterns and Standards.
