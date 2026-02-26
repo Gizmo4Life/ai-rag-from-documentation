@@ -5,7 +5,7 @@ pillar: root
 ---
 # Repository Root & Knowledge Graph
 
-This repository is governed by an AI-native, RAG-optimized documentation architecture.
+This repository is governed by an AI-native, RAG-optimized documentation architecture (Documentation-as-Code).
 
 ```mermaid
 graph TD
@@ -16,31 +16,30 @@ graph TD
     Dev --> Ops
 ```
 
-## Pillar: Governance (`docs/governance/`)
-*Defines the meta-rules and idempotent entry points for agents.*
-- `protocol/`: Step-by-step execution scripts for modifying or auditing the system.
-- `standard/`: Global constraints applied across the repository layout and metadata.
+## Protocol & Governance (`docs/governance/`)
+*Nuance: Meta-rules, operational protocols, and architectural constraints. This is the entry point for all agentic and human modifications.*
+- [Protocol](docs/governance/protocol/): Step-by-step execution scripts for project sequences (Greenfield, Discovery, PR Review).
+- [Standard](docs/governance/standard/): Global constraints and pattern ratings (PADU) for structural compliance.
 
-## Pillar: Architecture (`docs/architecture/`)
-*Defines the application topology and business orchestration.*
-- `capability/`: Business logic flows and module orchestration sequences (T2).
-- `module/`: Physical code clusters, pattern references, and telemetry specs (T3).
+## Topology & Capabilities (`docs/architecture/`)
+*Nuance: System topology, capabilities (T2), and module (T3) definitions. Defines the hierarchical map of the codebase.*
+- [Capability](docs/architecture/capability/): Bounded contexts orchestrating multiple modules to deliver business value.
+- [Module](docs/architecture/module/): Physical code clusters mapping implementation to architectural requirements.
 
-## Pillar: Developer (`docs/developer/`)
-*Defines the shapes, rules, and human processes for building the system.*
-- `pattern/`: Contextless definitions of code geometry and document structures.
-- `standard/`: PADU matrices rating patterns against specific operational contexts.
-- `workflow/`: Human-centric guides for the SDLC (e.g., "Getting Started", "Pull Requests").
+## Shapes & Workflows (`docs/developer/`)
+*Nuance: The "How-To" for building and maintaining the system. Contains contextless shapes and human-centric workflows.*
+- [Pattern](docs/developer/pattern/): Atomic definitions of code geometry and document structures.
+- [Workflow](docs/developer/workflow/): Human-centric guides for the SDLC (Getting Started, Git procedures).
 
-## Pillar: Operational (`docs/operational/`)
-*Defines execution states and incident restoration.*
-- `runbook/`: Incident response flows mapping telemetry symptoms to resolution tasks.
-- `task/`: Atomic, copy-pasteable commands to verify health or restore system state.
+## Recovery & Reliability (`docs/operational/`)
+*Nuance: Artifacts for system uptime, incident restoration, and automated maintenance.*
+- [Runbook](docs/operational/runbook/): Incident response flows mapping telemetry symptoms to resolutions.
+- [Task](docs/operational/task/): Atomic, idempotent commands for health verification and recovery.
 
-## Pillar: External (`docs/external/`)
-*Defines system boundaries.*
-- `contract/`: API definitions (OpenAPI, GraphQL schemas) exposed to the world.
-- `integration/`: Behavioral expectations and SLAs for 3rd party vendors.
+## Contracts & Boundaries (`docs/external/`)
+*Nuance: API contracts and behavioral expectations for external consumers and vendor dependencies.*
+- [Contract](docs/external/contract/): Public interface definitions (OpenAPI, GraphQL).
+- [Integration](docs/external/integration/): Vendor SLAs and 3rd party interaction rules.
 
 ---
 ## Machine Navigation Metadata
@@ -50,18 +49,17 @@ pillar: root
 index_map:
   governance:
     path: docs/governance/
-    scope: Meta-rules and idempotent entry points.
+    scope: Meta-rules and entry points.
   architecture:
     path: docs/architecture/
-    scope: Application topology and business orchestration.
+    scope: Topology and capabilities.
   developer:
     path: docs/developer/
-    scope: Structural shapes, standards, and human workflows.
+    scope: Patterns and human workflows.
   operational:
     path: docs/operational/
-    scope: Execution states and incident restoration.
+    scope: Runbooks and restoration tasks.
   external:
     path: docs/external/
-    scope: API contracts and vendor integration specs.
+    scope: API contracts and vendor SLAs.
 ```
-

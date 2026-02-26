@@ -3,15 +3,40 @@ id: architecture-capability-manifest
 type: manifest
 pillar: architecture
 ---
-[Home](/) > [Docs](/docs/read[Home](/) > [Docs](/docs/readme.md) > [Architecture](/docs/architecture/readme.md) > Capability
+[Home](/) > [Docs](/docs/readme.md) > [Architecture](/docs/architecture/readme.md) > Capability
 
 # Sub-pillar: Capability
 
 Business logic flows and orchestration sequences.
 
-- [agent-orchestration](agent-orchestration.md): Orchestrates agent-documentation interactions.
-- [governance-enforcement](governance-enforcement.md): Orchestrates protocol and structural compliance.
-- [repository-consumption](repository-consumption.md): Governs external adoption strategies.
-- [operational-reliability](operational-reliability.md): Incident response and telemetry.
+```mermaid
+graph LR
+    subgraph Strategic Intent
+        Ingest[Doc Ingestion]
+        Orch[Graph Orchestration]
+    end
+    subgraph Execution
+        Gov[Governance Enforcement]
+        Cons[Repository Consumption]
+        Rel[Operational Reliability]
+    end
 
+    Ingest --> Orch
+    Orch --> Gov
+    Orch --> Cons
+    Orch --> Rel
+```
 
+## 1. Core Ingestion & Graph
+*Nuance: Primary capabilities for building the Knowledge Graph from raw data.*
+- [agent-orchestration](agent-orchestration.md): Context injection and agent behavioral rules.
+- [doc-ingestion](/docs/architecture/capability/doc-ingestion.md): Physical file processing and validation. (Planned)
+
+## 2. Governance & Compliance
+*Nuance: Capabilities dedicated to ensuring the repository adheres to its own rules.*
+- [governance-enforcement](governance-enforcement.md): Orchestrates protocol and structural compliance audits.
+
+## 3. Consumption & Reliability
+*Nuance: Strategic boundary management for external users and production uptime.*
+- [repository-consumption](repository-consumption.md): Governs external adoption strategies (Greenfield/Brownfield).
+- [operational-reliability](operational-reliability.md): Orchestrates incident response, telemetry, and restoration.

@@ -9,15 +9,30 @@ pillar: governance
 
 Global repository constraints and architectural rules.
 
-## Structural Integrity
-*Nuance: Standards governing the physical and logical organization of knowledge.*
-- [arch-documentation](arch-documentation.md): Rules for T1-T3 documentation mapping.
-- [document-organization](document-organization.md): Hierarchy, metadata, and breadcrumb rules.
-- [document-topologies](document-topologies.md): Rules for cross-pillar linkage.
+```mermaid
+graph TD
+    subgraph Compliance Pyramid
+        Base[Structural Integrity]
+        Mid[Process Quality]
+        Top[Semantic Clarity]
+    end
 
-## Process Quality
-*Nuance: Standards governing the execution of CI/CD, operations, and audit protocols.*
-- [cicd-pipeline](cicd-pipeline.md): Quality and deployment guidelines.
-- [ops-documentation](ops-documentation.md): REST guidelines for restoration and triage.
+    Base --> Mid
+    Mid --> Top
+```
+
+## 1. Structural Integrity (Foundation)
+*Nuance: Standards governing the physical and logical organization of knowledge. Mandatory for all pillars.*
+- [arch-documentation](arch-documentation.md): T1-T3 mapping rules.
+- [document-organization](document-organization.md): Metadata and hierarchy rules.
+- [document-topologies](document-topologies.md): Cross-pillar linkage rules.
+
+## 2. Process Quality (Action)
+*Nuance: Standards governing runtime and CI/CD operations.*
+- [cicd-pipeline](cicd-pipeline.md): Deployment and quality gates.
+- [ops-documentation](ops-documentation.md): Restoration and triage guidelines.
 - [protocol-execution](protocol-execution.md): Rules for valid agent-led operations.
-- [context-elicitation](/docs/governance/standard/context-elicitation.md): Standards for requirement semantic discovery.
+
+## 3. Semantic Clarity (Intent)
+*Nuance: Standards for capturing intent and nuance before implementation.*
+- [context-elicitation](/docs/governance/standard/context-elicitation.md): Requirement discovery and boundary definition.

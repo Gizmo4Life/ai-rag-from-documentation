@@ -9,20 +9,46 @@ pillar: architecture
 
 Physical code clusters and implementation mappings.
 
-## Logic & Implementation
-*Nuance: Modules governing the physical execution of application code and document structures.*
-- [doc-system](doc-system.md): The physical documentation file structure.
-- [src-core](src-core.md): Core application source orchestration.
-- [ai-config](ai-config.md): Persona and behavioral rule injections.
+```mermaid
+graph TD
+    subgraph System Core
+        Core[src-core]
+        Sys[doc-system]
+        AI[ai-config]
+    end
+    subgraph Governance Layer
+        Prot[governance-protocols]
+        Stan[governance-standards]
+        Pat[developer-patterns]
+    end
+    subgraph Operational Edge
+        Work[agent-workflows]
+        Ext[external-pillar]
+        Ops[operational-pillar]
+    end
 
-## Governance & Standards
-*Nuance: Modules mapping the rules, protocols, and architectural shapes of the system.*
-- [developer-patterns](developer-patterns.md): Atomic architectural shapes.
-- [governance-protocols](governance-protocols.md): Step-by-step operation sequences.
+    Sys --> Core
+    Pat --> Stan
+    Stan --> Prot
+    Prot --> Work
+    Work --> Ops
+    Ext --> Core
+```
+
+## 1. System Core
+*Nuance: The primary implementation logic for the RAG engine.*
+- [src-core](src-core.md): Physical application logic.
+- [doc-system](doc-system.md): File system structure and DaC engine.
+- [ai-config](ai-config.md): Persona behavioral injections.
+
+## 2. Governance Layer
+*Nuance: The "Brain" of the repository, defining the rules and protocols.*
+- [developer-patterns](developer-patterns.md): Atomic structural definitions.
 - [governance-standards](governance-standards.md): Compliance and fitness rules.
+- [governance-protocols](governance-protocols.md): Idempotent execution sequences.
 
-## Execution & Stability
-*Nuance: Modules dedicated to system boundaries, automation, and operational recovery.*
-- [agent-workflows](agent-workflows.md): Automation definitions for protocols.
-- [external-pillar](external-pillar.md): System boundaries and consumption strategies.
-- [operational-pillar](operational-pillar.md): Incident response and restoration.
+## 3. Operational Edge
+*Nuance: Automation and response logic for external boundaries and runtime.*
+- [agent-workflows](agent-workflows.md): Protocol automation.
+- [external-pillar](external-pillar.md): System boundaries and adoption.
+- [operational-pillar](operational-pillar.md): Restoration and triage logic.
