@@ -11,7 +11,7 @@ pillar: governance
 | Pattern | Rating | Contextual Nuance |
 | :--- | :--- | :--- |
 | [doc-gov-protocol](/docs/developer/pattern/doc-gov-protocol.md) | **P** | Required format for all execution scripts. |
-| **Idempotent Actions** | **P** | Every step must check existing state before mutating (e.g., "If file missing, create..."). |
-| **Test-First Verification** | **P** | Greenfield changes must define the test/verification before writing implementation. |
+| [logic-idempotency](/docs/developer/pattern/logic-idempotency.md) | **P** | Every step must check existing state before mutating. |
+| [logic-test-first](/docs/developer/pattern/logic-test-first.md) | **P** | Greenfield changes must define the test before implementation. |
 | **Silent Overwrites** | **U** | Unacceptable. Discovery must flag outdated docs, not overwrite them without mapping the new pattern. |
 | **Code Writing in Discovery** | **U** | Unacceptable. Discovery is a read-and-document operation only. |

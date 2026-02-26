@@ -9,4 +9,7 @@ pillar: architecture
 
 Physical code clusters and implementation mappings.
 
-- [src-core](src-core.md): Core RAG logic and processing.
+- [agent-workflows](agent-workflows.md)
+- [ai-config](ai-config.md)
+- [doc-system](doc-system.md)
+- [src-core](src-core.md)

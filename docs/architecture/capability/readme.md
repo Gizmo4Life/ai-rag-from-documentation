@@ -9,4 +9,4 @@ pillar: architecture
 
 Business logic flows and orchestration sequences.
 
-*(No capabilities defined yet)*
+- [agent-orchestration](agent-orchestration.md)
