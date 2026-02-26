@@ -10,17 +10,31 @@ This repository uses a Documentation-as-Code (DaC) model to govern all repositor
 
 ```mermaid
 graph TD
-    Root[docs/readme.md] --> Gov[governance/]
-    Root --> Arch[architecture/]
-    Root --> Dev[developer/]
-    Root --> Ops[operational/]
-    Root --> Ext[external/]
+    Root[docs/readme.md] --> MS[Main Sequences]
+    Root --> Pillars[Pillars]
 
-    Gov --> GovS[Standard]
-    Gov --> GovP[Protocol]
-    Dev --> DevP[Pattern]
-    Dev --> DevS[Standard]
+    MS --> Disc[Discovery]
+    MS --> Green[Greenfield]
+    MS --> PR[PR Review]
+    MS --> Triage[Triage]
+
+    Pillars --> Gov[Governance]
+    Pillars --> Arch[Architecture]
+    Pillars --> Dev[Developer]
+    Pillars --> Ops[Operational]
+    Pillars --> Ext[External]
+
+    Gov --> MS
+    Arch --> MS
+    Dev --> MS
 ```
+
+## Main Sequences
+The definitive entry points for any repository action.
+- **[Discovery](/docs/governance/protocol/discovery.md):** Map and ingest code shapes.
+- **[Greenfield](/docs/governance/protocol/greenfield.md):** Implement new features.
+- **[PR Review](/docs/governance/protocol/pull-request-review.md):** Mandatory change verification.
+- **[Triage](/docs/governance/protocol/operational-triage.md):** Active incident response.
 
 ## Pillars
 

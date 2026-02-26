@@ -3,10 +3,10 @@ id: architecture-capability-manifest
 type: manifest
 pillar: architecture
 ---
-[Home](/) > [Docs](/docs/readme.md) > [Architecture](/docs/architecture/readme.md) > Capability
+[Home](/) > [Docs](/docs/read[Home](/) > [Docs](/docs/readme.md) > [Architecture](/docs/architecture/readme.md) > Capability
 
 # Sub-pillar: Capability
 
 Business logic flows and orchestration sequences.
 
-- [agent-orchestration](agent-orchestration.md)
+- [agent-orchestration](agent-orchestration.md): Orchestrates agent-documentation interactions.

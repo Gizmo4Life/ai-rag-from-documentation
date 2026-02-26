@@ -11,11 +11,13 @@ System boundaries, API contracts, and third-party behavioral expectations.
 
 ```mermaid
 graph LR
-    Ext[External] --> Cont[Contract]
+    Ext[External] --> UC[Use Cases]
+    Ext --> Cont[Contract]
     Ext --> Int[Integration]
 ```
 
 ## Sub-directories
+- [use-cases.md](use-cases.md): Primary operational contexts for repository consumption.
 - [contract/](contract/): OpenAPI, GraphQL, and public interface definitions.
 - [integration/](integration/): SLAs and behavior for 3rd party vendors.
 
@@ -25,6 +27,9 @@ graph LR
 type: directory_manifest
 pillar: external
 index_map:
+  use_cases:
+    path: use-cases.md
+    scope: Primary repository consumption contexts.
   contract:
     path: contract/
     scope: Public API definitions.
@@ -32,3 +37,4 @@ index_map:
     path: integration/
     scope: Vendor SLAs and behavioral specs.
 ```
+
